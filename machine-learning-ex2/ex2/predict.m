@@ -15,9 +15,18 @@ p = zeros(m, 1);
 %               You should set p to a vector of 0's and 1's
 %
 
-
-
-
+h_theta = sigmoid(X * theta);
+%h_theta
+%thresholding at 0.5, if the h_theta values are bigger than 0.5 then assign
+%1 or else 0.
+for i = 1:length(h_theta)
+   
+    if h_theta(i) >= 0.5
+        p(i) = 1;
+    else
+        p(i) = 0;
+    end
+end
 
 
 

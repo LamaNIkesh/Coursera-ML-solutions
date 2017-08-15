@@ -14,7 +14,8 @@ figure; hold on;
 
 
 %find indices of positive and negative examples
-pos = find(y == 1); neg = find(y == 0); 
+pos = find(y == 1); 
+neg = find(y == 0); 
 
 %plot examples
 plot(X(pos,1), X(pos, 2), 'k+', 'LineWidth', 2, 'MarkerSize', 7);
